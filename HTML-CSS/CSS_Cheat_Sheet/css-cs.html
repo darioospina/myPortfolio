@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dario's CSS cheat sheet</title>
+    <link href="stylesheet.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Train+One&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="wrapper">
+    <div class="title">DARIO'S CSS CHEAT SHEET</div>
+    <div class="topicName">CSS Basics</div>
+    <div class="lineDivision"></div>
+    <div class="1 gridElement content" style="margin:auto 10px auto 10px;">
+            <p style="margin:10px 0 0 0">element {</p>
+            <p style="margin:0 0 0 10px">background-color:</p>
+            <ul>
+                <li>RGB (Red, Green, Blue, Opacity)</li>
+                <li>HEX #RRGGBB</li>
+            </ul>
+            <p style="margin:0 0 10px 0">}</p>
+    </div>
+    <div class="2 gridElement content" style="margin:auto;">
+        <p style="margin:0">i.e. some HEX colors:</p>
+        <table>
+            <tr>
+            <td width=200px height="50px" style="background-color: #581845; color:white; text-align: center;">#581845</td>
+            <td width=200px height="50px" style="background-color: #900C3F; color:white; text-align: center;">#900C3F</td>
+            </tr>
+            <tr>
+            <td width=200px height="50px" style="background-color: #C70039; color:white; text-align: center;">#C70039</td>
+            <td width=200px height="50px" style="background-color: #FF5733; color:white; text-align: center;">#FF5733</td>
+            </tr>
+        </table>
+    </div>
+    <div class="gridElement lineDivision"></div>
+    <div class="3 gridElement content" style="margin:auto 10px auto 10px;">
+        <p style="margin:10px 0 0 0">element {</p>
+        <p style="margin:0 0 0 10px">background-image: url (hen.png);</p>
+        <p style="margin:0 0 0 10px">background-repeat:</p>
+        <ul>
+            <li>repeat</li>
+            <li>repeat-x</li>
+            <li>repeat-y</li>
+            <li>no-repeat</li>
+        </ul>
+        <p style="margin:0 0 10px 0">}</p>
+    </div>
+    <div class="4 gridElement content" style="margin:auto">
+    <p style="margin:0">i.e.</p>
+    <table width=100% style="border:0px solid black">
+        <tr>
+        <td width=400px height="100px" style="border:1px solid black; background-image: url(hen.png); background-size: 100px 100px; background-repeat: repeat-x; text-align: center;"><span style="background-color: white;">background-repeat: repeat-x;</span></td>
+        </tr>
+        <tr>
+        <td width=400px height="100px" style="border:1px solid black; background-image: url(hen.png); background-size: 100px 100px; background-repeat: no-repeat; text-align: center"><span style="background-color: white;">background-repeat: no-repeat;</span></td>
+        </tr>
+    </table>
+    </div>
+    <div class="gridElement lineDivision"></div>
+    <div class="5 gridElement content" style="margin:auto 10px auto 10px;">
+        <p style="margin:10px 0 0 0">element {</p>
+        <p style="margin:0 0 0 10px; color: blue">border: 1px (top) 5px (right) 5px (bottom) 5px (left);</p>
+        <p style="margin:0 0 0 10px; color: green; ">margin: 15px (top) 15px (right) 30px (bottom) 15px (left);</p>
+        <p style="margin:0 0 0 10px; color: red;">padding: 10px (top) 50px (right) 10px (bottom) 10px (left);</p>
+        <p style="margin:0 0 10px 0">}</p>
+</div>
+    <div class="6 gridElement content" style="margin: auto;">
+    <p style="margin:0">i.e.</p>
+    <table width=100% style="border:0px solid black">
+        <tr>
+        <td width=400px style="border:1px solid black; background-color: green; text-align: center;">
+            <div style="border: 5px solid blue; border-top:2px solid blue; padding: 10px 50px 10px 10px; margin: 15px 15px 30px 15px; background-color: red"><div style="background-color:white">Content</div></div>
+        </td>
+        </tr>
+    </table>
+    </div>
+
+    <div class="gridElement lineDivision"></div>
+    <div class="7 gridElement content" style="margin:auto 10px auto 10px;">
+        <p style="margin:10px 0 0 0">Text_1 {</p>
+            <p style="margin:0 0 0 10px">font-family: Verdana, Geneva, Tahoma, sans-serif;</p>
+            <p style="margin:0 0 0 10px">font-size: large;</p>
+            <p style="margin:0 0 0 10px">font-style: italic;</p>
+            <p style="margin:0 0 0 10px">font-weight: bold;</p>
+            <p style="margin:0 0 10px 0">}</p>
+
+            <p style="margin:20px 0 0 0">Text_2 {</p>
+                <p style="margin:0 0 0 10px">font-weight: 900;</p>
+                <p style="margin:0 0 0 10px">font-size: 35px;</p>
+                <p style="margin:0 0 10px 0">}</p>
+                
+            <p style="margin:20px 0 0 0">Text_3 {</p>
+                <p style="margin:0 0 0 10px">font-family: sans-serif;</p>
+                <p style="margin:0 0 0 10px">font-size: 20px;</p>
+                <p style="margin:0 0 0 10px">color: blue;</p>
+                <p style="margin:0 0 10px 0">}</p>
+</div>
+    <div class="8 gridElement content" style="margin: auto;">
+    <p style="margin:0">i.e.</p>
+    <p style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: large; font-style: italic; font-weight: bold;">Text_1 : Include a text here</p>
+    <p style="font-weight: 900; font-size: 35px;">Text_2 : Include a text here</p>
+    <p style="font-family: sans-serif; font-size: 20px; text-transform: uppercase; color: blue;">Text_3 : Include a text here</p>
+    </div>
+
+    
+    <div class="gridElement lineDivision"></div>
+    <div class="9 gridElement content" style="margin:auto 10px auto 10px;">
+        <p style="margin:10px 0 0 0">div container {</p>
+        <p style="margin:0 0 0 10px">position: relative;</p>
+        <p style="margin:0 0 10px 0">}</p>
+        <p style="margin:20px 0 0 0">img ball {</p>
+            <p style="margin:0 0 0 10px">position: absolute;</p>
+            <ul>
+                <li>Position # 1: top: 0; left: 0</li>
+                <li>Position # 2: top: 0px; left: 175px;</li>
+                <li>Position # 3: top: 0px; left: 350px;</li>
+                <li>Position # 4: top: 25%; left: 350px;</li>
+                <li>Position # 5: top: 50%; left: 350px;</li>
+                <li>Position # 6: top: 50%; left: 175px;</li>
+                <li>Position # 7: top: 50%; left: 0px;</li>
+                <li>Position # 8: top: 25%; left: 0px;</li>
+            </ul>
+            <p style="margin:0 0 10px 0">}</p>
+    </div>
+    <div class="10 gridElement constent" style="margin:auto">
+    <p style="margin:0">i.e.</p>
+    <div class="alignItems"><img class="tennisBall" src="tennis.png" width="50px"></div>
+    </div>
+
+    
+    
+    <div class="gridElement lineDivision"></div>
+    <div class="9 gridElement content" style="margin:auto 10px auto 10px;">
+        <p style="margin:10px 0 0 0">.link2 {</p>
+        <p style="margin:0 0 0 10px">text-decoration: none;</p>
+        <p style="margin:0 0 0 10px">color: purple;</p>
+        <p style="margin:0 0 10px 0">}</p>
+        <p style="margin:20px 0 0 0">.link2: hover {</p>
+        <p style="margin:0 0 0 10px">color: green;</p>
+        <p style="margin:0 0 0 10px">background-color: greenyellow;</p>
+        <p style="margin:0 0 0 10px">margin: 0 0 0 10px;</p>
+        <p style="margin:0 0 10px 0">}</p>
+    </div>
+    <div class="10 gridElement constent" style="margin:auto 70px">
+    <p style="margin:0">i.e.</p>
+    <p><a href="#" target="_blank">Link # 1: Link with no style</a></p>
+    <p><a href="#" target="_blank" class="link2">Link # 2: Including some style</a></p> 
+    </div>
+
+
+</div>
+</body>
+</html>

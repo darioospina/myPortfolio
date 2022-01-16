@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dario's HTML cheat sheet</title>
+    <link href="stylesheet.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Train+One&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="wrapper">
+    <div class="title gridElement">DARIO'S HTML CHEAT SHEET</div>
+    <div class="topicName gridElement">HTML Basics</div>
+    <div class="gridElement lineDivision"></div>
+    <div class="1 gridElement description">
+        <b>Structure</b>
+        <p>The basic HTML structure contains the following elements:</p>
+        <ul>
+            <li>&lt;HTML> &rArr; This is the container of all the HTML elements.</li>
+            <li>&lt;HEAD> &rArr; Contains the metadata (data about data). All the information written here will not be displayed.</li>
+            <li>&lt;TITLE> &rArr; Title to be displayed in the browser's title bar.</li>
+            <li>&lt;BODY> &rArr; Contains all the elements that will be displayed in the website.</li>
+        </ul>
+    </div>
+    <div class="2 gridElement textareaContainer">
+        <textarea name="box1" wrap="virtual" cols="40" rows="10" class="textBox">
+<html>
+<head>
+<title></title>
+</head>
+<body>
+</body>
+</html>
+        </textarea>
+    </div>
+    <div class="gridElement lineDivision"></div>
+    <div class="three twoCols gridElement description">
+        <b>Titles</b>
+        <p>The H tags (standing for Heading) can be used for displaying titles and subtitles depending on the desired size of the text:</p>
+        <H1><span class=tagToShow>&lt;H1></span> Text to be included <span class=tagToShow>&lt;/H1></span></H1>
+        <H2><span class=tagToShow>&lt;H2></span> Text to be included <span class=tagToShow>&lt;/H2></span></H2>
+        <H3><span class=tagToShow>&lt;H3></span> Text to be included <span class=tagToShow>&lt;/H3></span></H3>
+        <H4><span class=tagToShow>&lt;H4></span> Text to be included <span class=tagToShow>&lt;/H4></span></H4>
+    </div>
+    <div class="gridElement lineDivision"></div>
+    <div class="five twoCols gridElement description">
+        <b>Divisions</b>
+        <p>Frequently, the HTML document is organized by the use of the tag &lt;div></p>
+        <div class="example">A &lt;div> &lt;/div> can contain all kinds of information. <p>This box for example was created using a div and the style was added with CSS.</p></div>
+    </div>
+    <div class="gridElement lineDivision"></div>
+    <div class="seven twoCols gridElement description">
+        <b>Paragraphs</b>
+        <p><span class=tagToShow>&lt;p></span>Text is usually displayed using the &lt;p> tag. This way when you need to separate the text in two paragraps, you enclose each paragraph within the &lt;p> tag.<span class=tagToShow>&lt;/p></span></p>
+        <p><span class=tagToShow>&lt;p></span>This second paragraph was included in a different &lt;p> tag as can be noticed.<span class=tagToShow>&lt;/p></span></p>
+        <pre>
+            <span class=tagToShow>&lt;pre></span>But &lt;p> is not the only tag you can use to separate the text in paragraphs. 
+
+            The tag &lt;pre> that I'm using now, is useful when you have a text with breaks.<span class=tagToShow>&lt;/pre></span>
+        </pre>
+    </div>
+    <div class="gridElement lineDivision"></div>
+    <div class="eight gridElement description">
+        <b>Images</b>
+        <p>The tag &lt;IMG> is used to add images to the website </p>
+        <p>Within the tag, there are some properties that must be included for the image to be displayed:</p>
+        <ul>
+            <li>Property src: This stands for source and asks for the url or location of the image. If the image is not stored in your PC, you must include within quotation marks the url of the image. For example, the picture of garfield, displayed to the right is external, therefore, the tag must call the image from the url that stores it. <span class=tagToShow>&lt;IMG src="https://pixy.org/1246721/"></span>. On the other hand, the picture below garfield was stored in my PC, therefore the tag I used to display it was <span class=tagToShow>&lt;IMG src="cat1.jpg"></span></li>
+            <li>Property alt: This stands for alternative and means a text to be displayed if the image can't load or if it no longer exists.</li>
+            <li>Property width: This property defines the width of the picture. CSS can be used to add style to the image or define any property you want to change, however if you want a shortcut just for changing the size, you can use width.</li>
+        </ul>
+        <p>Combining all the properties, the final &lt;IMG> tag should be something like this <span class=tagToShow>&lt;IMG src="cat1.jpg" alt="garfield" width="300px"></span></p>
+    </div>
+    <div class="nine gridElement textareaContainer">
+        <img class="images" src="https://pixy.org/src/124/1246721.jpg" alt="garfield" width="300px">
+        <img class="images" src="cat1.jpg" alt="cat" width="300px">
+    </div>
+    <div class="gridElement lineDivision"></div>
+    <div class="ten gridElement description">
+        <b>Styling</b>
+        <p>For adding style to the HTML elements there is CSS (standing for Cascading Style Sheets). This is a styling language that can provide styling and design to any HTML element.</p>
+        <p>There are two ways for linking CSS with HTML:</p>
+        <ul>
+            <li>The first one is by adding the &lt;style> tag.</li>
+            <li>The second one is by linking the HTML file with a CSS file. For doing so, the following tag can be used <span class=tagToShow>&lt;link href="CSS_File_Name.css" rel="stylesheet"></span></li>
+        </ul>
+        <p>In both cases, within each HTML tag you are adding style, you must include either a class or an ID. These are references to the HTML tag you want to call from the CSS. For instance, I'm going to add some style to the following &lt;div> tag.</p>
+        <div class="addingStyle">&lt;div class="addingStyle">&lt;/div></div>
+        <p>The code that I used is in the text-box to the right.</p>
+    </div>
+    <style>
+        .addingStyle {
+            width: 70%;
+            border: 3px dotted red;
+            background-color: aqua;
+        }
+    </style>
+    <div class="eleven gridElement textareaContainer">
+        <textarea name="box2" wrap="virtual" cols="40" rows="20" class="textBox">
+<style>
+    .addingStyle {
+        width: 70%;
+        border: 3px dotted red;
+        background-color: aqua;
+    }
+</style>
+        </textarea>
+    </div>
+</div>
+</body>
+</html>

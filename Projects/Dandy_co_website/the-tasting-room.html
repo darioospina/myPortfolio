@@ -1,0 +1,139 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- For responsiveness -->
+	<meta name="description" content="The Dandy Brewing Company">
+	<meta name="keywords" content="craft beer in Calgary, local brewery with restaurant, calgary breweries">
+	<title>The Tasting Room - The Dandy Brewing Company</title>
+	<link rel="stylesheet" href="stylesheet.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Righteous&display=swap" rel="stylesheet">
+	<script type="text/javascript" src="js/dandy.js"></script>
+</head>
+<body>
+<div class="wrapper">
+	<label for="menu-hide" id="label-hide"><img src="images/menu.png" alt="Hamburger menu" class="img-menu"></label>
+    <input type="checkbox" name="" id="menu-hide">
+	<div class="grid-item sidebar">
+		<img id="logo" src="images/Dandy_Brewing_Logo.png" alt="Dandy Brewing Logo">
+		<ul>
+			<li><a href="index.html">About Us</a></li>
+			<li>
+				Beers
+				<div class="sub-menu">
+					<ul>
+						<li><a href="dandy-beers.html">The Dandy Line Up</a></li>
+						<li><a href="seasonal-beers.html">Seasonal Releases</a></li>
+					</ul>
+				</div>
+			</li>
+
+			<li><a href="the-tasting-room.html">The Tasting Room</a></li>
+			<li><a href="where-to-find-us.html">Where to Find Us</a></li>
+			<li><a href="artist-in-residence.html">Artist in Residence</a></li>
+			<li><a href="story.html">Story</a></li>
+			<li><a href="contact-us.html">Contact Us</a></li>
+		</ul>
+	</div>
+	<div class="grid-item content">
+		<div class="page-content" id="tastingRoom">
+			<div class="heading">
+				<h1>The Tasting Room</h1>
+				<h2>Service 20 taps of exceptional craft beer, find drinking food, cocktails and wine.</h2>
+			</div>
+			<div>
+				<div class="info-image">
+					<img src="images/Chef Merritt Gordon.jpg" alt="ChefMerrit" />
+				</div>
+				<div class="info-text">
+					<h2>What We Do</h2>
+					<p>
+						The Dandy Brewing Company and Tasting Room is a unique experience located in the heart of Ramsay.
+						The modern space features 20 taps of Dandy Beers (maybe a few rad guest taps), a curated cocktail list
+						featuring local spirit, a daily selection of top quality wines available by the glass.
+					</p>
+					<p>
+						Making the experience even better is a menu of drinking food, rooted in the fine dining. Chef Merritt
+						Gordon has put together something amazing, enhancing the already indulgent experience.
+					</p>
+					<p>
+						Open Daily for lunch and dinner service, as well as brunch on weekends.
+					</p>
+					<h2>More Information</h2>
+					<ul id="optionsMenu" class="content-menu">
+						<li onclick='showSection("Hours", this);'>Hours</li>
+						<li onclick='showSection("Snacks", this);'>Snacks</li>
+						<li onclick='showSection("Shop", this);'>Shop</li>
+					</ul>
+				</div>
+				<div style="clear:both" />
+			</div>
+			<div id="infoSection" class="info-section">
+				<div id="Hours" class="hidden">
+					<h2>Hours</h2>
+					<div class="schedule">
+						<div class="days">
+							Monday <br>
+							Tuesday <br>
+							Wednesday <br>
+							Thursday <br>
+							Friday <br>
+							Saturday <br>
+							Sunday <br>
+						</div>
+						<div class="time">
+							Closed <br>
+							11:30am - 10pm <br>
+							11:30am - 10pm <br>
+							11:30am - 10pm <br>
+							11:30am - Midnight <br>
+							10:00am - Midnight <br>
+							10:00am - 8pm <br>
+						</div>
+					</div>
+					<div class="subnote">
+						Please note: Due to AGLC regulations, we are not able to fill growlers or provide offsales at this time.
+					</div>
+				</div>
+				<div id="Snacks" class="hidden">
+						<h2>Restaurant</h2>
+						<p>
+							Offering a full lunch, dinner and brunch menu, the Tasting Room brings a unique drinking menu to the
+							craft beer experience.
+						</p>
+						<p>
+							With snacks, plates, desserts, and a fresh oyster bar, the menu is meant to be shared among friends and
+							lovers. Always evolving, the menu is perfectly paired with all things Dandy.
+						</p>
+						<p>Vegetarian and Vegan options available. Please ask your server.</p>
+						<p>Open for Lunch, Dinner, and Brunch.</p>
+					</div>
+					<div id="Shop" class="hidden">
+						<h2>Shop</h2>
+						<p>Dandy is pleased to offer a small offering of merchandise.</p>
+						<p>
+							Along with T-Shirts and hats, we are pleased to offer numbered silk screen prints, designed by Artists we
+							are so pleased to call friends, and printed by the team at Burnt Toast Studios.
+						</p>
+						<p>
+							We are also excited to announce a collaborative with North American Quality Purveyors on a line of Tshirts
+							and baseball caps. We worked together to design custom cut shirts and hats, that fit a Dandy
+							perfectly.
+						</p>
+					</div>
+				</div>
+		</div>
+	</div>
+	<div class="grid-item footer">
+		<p>The Dandy Brewing Company, 2003 11 ST SE, Calgary, AB, T2G 3G6, Canada</p>
+		<p>
+			Find us on<br>
+			<a href="https://twitter.com/DandyAlesYYC" target="_blank"><img class="icons" alt="Twitter" src="images/tw_icon.png"></a>
+            <a href="https://www.facebook.com/dandyalesyyc/" target="_blank"><img class="icons" alt="Facebook" src="images/FB_icon.png"></a>
+            <a href="https://www.instagram.com/dandyalesyyc" target="_blank"><img class="icons" alt="Instagram" src="images/IG_icon.png"></a></p>
+		</p>
+	</div>
+</div>
+</body>
+</html>

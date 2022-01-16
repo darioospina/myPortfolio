@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dario's JS cheat sheet</title>
+    <link href="stylesheet.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Train+One&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="wrapper">
+    <div class="title">DARIO'S JS CHEAT SHEET</div>
+    <div class="topicName">Javascript Basics</div>
+    <div class="lineDivision"></div>
+    <div class="1 gridElement content" style="margin:auto 10px auto 10px;">
+        <p style="font-weight: bold; margin: 0px 0 5px 0">Playing with buttons: </p>
+        <textarea name="box1" wrap="virtual" cols="50" rows="5" class="textBox">
+var x = document.getElementById("testButton")
+x.addEventListener("click", display, count)
+
+var counting = 0;
+function count(event) {
+    counting++;
+    console.log(counting)
+}
+
+function display(event) {
+    count();
+    if(counting % 2 != 0) {
+        document.getElementById("displayText").innerText="You just clicked the button";        
+    } else if(counting % 2 == 0) {
+        document.getElementById("displayText").innerText="";        
+    }
+}
+        </textarea>
+    </div>
+    <div class="2 gridElement content" style="margin:auto;">
+        <button type="button" id="testButton">Click here!</button>
+        <div id="displayText" style="display:inline-block"></div>
+    </div>
+
+    <div class="lineDivision"></div>
+    <div class="3 gridElement content" style="margin:auto 10px auto 10px;">
+        <p style="font-weight: bold; margin: 0px 0 5px 0">More about buttons: </p>
+        <textarea name="box2" wrap="virtual" cols="50" rows="5" class="textBox">
+var y = document.getElementById("testButton2")
+y.addEventListener("click", display2)
+
+function display2(event) {
+    alert("Leave me alone!!");
+}
+        </textarea>
+    </div>
+    <div class="4 gridElement content" style="margin:auto;">
+        <button type="button" id="testButton2">Now click here!</button>
+    </div>
+
+
+    <div class="lineDivision"></div>
+    <div class="5 gridElement content" style="margin:auto 10px auto 10px;">
+        <p style="font-weight: bold; margin: 0px 0 5px 0">About functions: </p>
+        <textarea name="box3" wrap="virtual" cols="50" rows="8" class="textBox">
+function addition(event) {
+    var Num1 = document.getElementById("Num1").value
+    var Num2 = document.getElementById("Num2").value
+    Num1 = parseInt(Num1)
+    Num2 = parseInt(Num2)
+    var x = Num1 + Num2;
+    document.getElementById("Result").innerHTML = x    
+}
+
+function subtraction(event) {
+    var Num1 = document.getElementById("Num1").value
+    var Num2 = document.getElementById("Num2").value
+    Num1 = parseInt(Num1)
+    Num2 = parseInt(Num2)
+    var x = Num1 - Num2;
+    document.getElementById("Result").innerHTML = x    
+}
+
+function multiplication(event) {
+    var Num1 = document.getElementById("Num1").value
+    var Num2 = document.getElementById("Num2").value
+    Num1 = parseInt(Num1)
+    Num2 = parseInt(Num2)
+    var x = Num1 * Num2;
+    document.getElementById("Result").innerHTML = x    
+}
+
+function division(event) {
+    var Num1 = document.getElementById("Num1").value
+    var Num2 = document.getElementById("Num2").value
+    Num1 = parseInt(Num1)
+    Num2 = parseInt(Num2)
+    var x = Num1 / Num2;
+    document.getElementById("Result").innerHTML = x    
+}
+        </textarea>
+    </div>
+    <div class="6 gridElement content" style="margin:auto;">
+        <table>
+            <tr>
+                <td width="150px" style="text-align: center;">Enter number 1</td>
+                <td width="150px" style="text-align: center;">Enter number 2</td>
+            </tr>
+            <tr>
+                <td style="text-align: center;"><input type="number" id="Num1" style="width: 70px;" value=0></td>
+                <td style="text-align: center;"><input type="number" id="Num2" style="width: 70px;" value=0></td>
+            </tr>
+            <tr>
+                <td colspan=2>
+                    <button type="button" id="addition" onclick="addition()">Addition</button>
+                    <button type="button" id="subtraction" onclick="subtraction()">Subtraction</button>
+                    <button type="button" id="multiplication" onclick="multiplication()">Multiplication</button>
+                    <button type="button" id="division" onclick="division()">Division</button>
+                </td>
+            </tr>
+            <tr>
+                <td colspan=2 style="text-align: center;">
+                    Result: 
+                </td>
+            </tr>
+            <tr>
+                <td colspan=2 style="text-align: center;">
+                    <div id="Result" style="width: 150px; border: 1px solid black; height: 20px; margin: auto; background-color: white;"></div>
+                </td>
+            </tr>
+        </table>
+
+        
+    </div>
+
+
+    <div class="lineDivision"></div>
+    <div class="7 gridElement content" style="margin:0 0 0 10px">
+        <p style="font-weight: bold; margin: 0px 0 5px 0">Learning about JS objects:</p>
+        <p style="margin: 10px 0 5px 0">Objects are javascript variables that can store other variables.</p>
+        <p style="margin: 0">Objects can store both properties and methods. The table to the right explains what are each of them with an example.</p>
+    </div>
+    <div class="8 gridElement content" style="margin:auto;">
+        <table style="font-size: 12px;">
+            <tr>
+                <th class="objectHeader" width="150px" style="border-top:1px solid grey; border-bottom: 1px solid grey;">Object</th>
+                <th class="objectHeader" width="150px" style="border-top:1px solid grey; border-bottom: 1px solid grey;">Properties</th>
+                <th class="objectHeader" width="150px" style="border-top:1px solid grey; border-bottom: 1px solid grey;">Methods</th>
+            </tr>
+            <tr>
+                <td rowspan="4"><img src="student.png" width="120px" style="display:block; margin:auto"></td>
+                <td style="border-bottom: 1px solid grey;">student.name = Dario</td>
+                <td style="border-bottom: 1px solid grey;">student.wakesUp()</td>
+            <tr>
+                <td style="border-bottom: 1px solid grey;">student.age = 31</td>
+                <td style="border-bottom: 1px solid grey;">student.eats()</td>
+            </tr>
+            <tr>
+                <td style="border-bottom: 1px solid grey;">student.citizenship = Colombian</td>
+                <td style="border-bottom: 1px solid grey;">student.studies()</td>
+            </tr>
+            <tr>
+                <td style="border-bottom: 1px solid grey;">student.program = Software Development</td>
+                <td style="border-bottom: 1px solid grey;">student.sleeps()</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="lineDivision"></div>
+    <div class="8 gridElement content" style="margin:0 0 0 10px">
+        <p style="font-weight: bold; margin: 0px 0 5px 0">Playing with strings:</p>
+
+        <textarea name="box4" wrap="virtual" cols="50" rows="8" class="textBox">
+var str = document.getElementById("string");
+str.addEventListener("keyup", function() {
+    document.getElementById("strLower").innerHTML = str.value.toLowerCase();
+    document.getElementById("strUpper").innerHTML = str.value.toUpperCase();
+    document.getElementById("strLength").innerHTML = str.value.length;
+})
+        </textarea>
+
+
+    </div>
+    <div class="9 gridElement content" style="margin:auto 10px">
+        <table>
+            <tr>
+                <td>Enter a string</td>
+                <td><input type="text" id="string" style="width: 200px;" value="Your text here"></td>
+            </tr>
+            <tr>
+                <td>Your string in lower case</td>
+                <td><div id="strLower" style="border: 1px solid grey; width:200px; height: 20px;"></div></td>
+            </tr>
+            <tr>
+                <td>Your string in upper case</td>
+                <td><div id="strUpper" style="border: 1px solid grey; width:200px; height: 20px;"></div></td>
+            </tr>
+            <tr>
+                <td>Your string's length</td>
+                <td><div id="strLength" style="border: 1px solid grey; width:200px; height: 20px;"></div></td>
+            </tr>
+        </table>
+    </div>
+
+
+    
+    <div class="lineDivision"></div>
+    <div class="10 gridElement content" style="margin: auto 10px">
+        <p style="font-weight: bold; margin: 0px 0 5px 0">Dealing with arrays:</p>
+                <textarea name="box5" wrap="virtual" cols="50" rows="8" class="textBox">
+function sortingArray() {
+    var element1 = document.getElementById("El_1").value
+    var element2 = document.getElementById("El_2").value
+    var element3 = document.getElementById("El_3").value
+    var element4 = document.getElementById("El_4").value
+    var element5 = document.getElementById("El_5").value
+    var array1 = [element1, element2, element3, element4, element5]
+    document.getElementById("arraySorted").innerText = array1.sort()
+}
+
+function sortingArrayReverse() {
+    var element1 = document.getElementById("El_1").value
+    var element2 = document.getElementById("El_2").value
+    var element3 = document.getElementById("El_3").value
+    var element4 = document.getElementById("El_4").value
+    var element5 = document.getElementById("El_5").value
+    var array1 = [element1, element2, element3, element4, element5]
+    document.getElementById("arraySorted2").innerText = array1.reverse()
+}
+        </textarea>
+    </div>
+    <div class="11 gridElement content" style="margin:0 0 0 10px">
+        <table>
+            <tr>
+                <td>Enter element # 1</td>
+                <td><input type="text" id="El_1" style="width: 150px;"></td>
+            </tr>
+            <tr>
+                <td>Enter element # 2</td>
+                <td><input type="text" id="El_2" style="width: 150px;"></td>
+            </tr>
+            <tr>
+                <td>Enter element # 3</td>
+                <td><input type="text" id="El_3" style="width: 150px;"></td>
+            </tr>
+            <tr>
+                <td>Enter element # 4</td>
+                <td><input type="text" id="El_4" style="width: 150px;"></td>
+            </tr>
+            <tr>
+                <td>Enter element # 5</td>
+                <td><input type="text" id="El_5" style="width: 150px;"></td>
+            </tr>
+            <tr>
+                <td style="padding: 10px 0 0 0"><button type="button" id="sortElements" onclick="sortingArray()">Sort elements (A-Z)</button></td>
+                <td><div id="arraySorted"></div></td>
+            </tr>
+            <tr>
+                <td style="padding: 10px 0 0 0"><button type="button" id="sortElements" onclick="sortingArrayReverse()">Sort elements (Z-A)</button></td>
+                <td><div id="arraySorted2"></div></td>
+            </tr>
+        </table>
+    </div>
+
+</div>
+
+<script src="script1.js"></script>
+</body>
+</html>

@@ -1,0 +1,140 @@
+/* 
+    Project Name: Coworking Registry(Milestone 2)
+    Course Code: SODV1201
+    Class: Software Development Diploma Program
+    Author: Dario, Candace & Palak  
+*/
+
+td{
+    border:1px solid black;
+    width: 10%;
+}
+
+td ul {
+    padding: 0 0 0 20px;
+    margin: 0;
+}
+
+::marker {
+    color: grey;
+    font-size: 1.5em;
+}
+
+.edit {
+    grid-column: 1/1;
+}
+
+.delete {
+    grid-column: 10/11;
+}
+
+.main {
+    grid-column: 1/11;
+    display: grid;
+    grid-template-columns: 5% 40% 40% 5%;
+    justify-content: space-evenly;
+    grid-template-rows: 80% 20%;
+    min-height: 250px;
+    background-color: #2D848A;
+    border-radius: 15px;
+    padding: 15px 0;
+}
+
+.left_arrow {
+    grid-column: 1/1;
+    grid-row: 1/3;
+    margin: auto;   
+}
+
+.right_arrow {
+    grid-column: 4/5;
+    grid-row: 1/3;
+    margin: auto;   
+}
+
+.property_info {
+    grid-row: 1/3;
+    background-color: #e1ecec;
+    border-top-left-radius: 20px;
+}
+
+.property_map {
+    grid-row: 1/2;
+    background-color: #e1ecec;
+}
+.property_map_info {
+    grid-row: 2/3;
+    background-color: #e1ecec;
+    padding: 10px;
+    font-size: 12px;
+    border-bottom-right-radius: 20px;
+}
+
+#upload {
+    width: 200px;
+}
+
+table {
+    font-size: 12px;
+    padding: 10px;
+    border: 0px solid black;
+    border-collapse: separate;
+    border-spacing: 5px; 
+    min-height: 350px;
+}
+
+td {
+  border:0px solid black;
+  border-bottom: 1px solid black;
+  height: 20px;
+}
+
+.tab_col_1 {
+    width: 40%;
+    color: grey;
+    height: 20px;
+}
+
+.tab_col_2 {
+    width: 60%;
+    border: 0px solid black;
+    border-bottom: 1px solid black;
+    color: #00171F;
+    height: 20px;
+}
+
+.property_name {
+    text-align: center;
+    font-size: 15px;
+    padding: 0 0 10px 0;
+    color: #00171F;
+}
+
+
+@media (max-width: 700px){
+    .main {
+    grid-column: 1/11;
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    justify-content: space-evenly;
+    min-height: 250px;
+    background-color: #2D848A;
+    border-radius: 15px;
+    padding: 15px 0;
+    }
+    .property_map {
+    display:none;
+    }
+    .property_map_info {
+    display:none;
+    }
+    .left_arrow {
+    grid-column: 1/1;
+    }   
+    .property_info {
+    grid-column: 2/2;
+    }
+    .right_arrow {
+    grid-column: 3/3;
+    }
+}

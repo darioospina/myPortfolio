@@ -1,0 +1,101 @@
+<!--  
+    Project Name: Coworking Registry(Milestone 2)
+    Course Code: SODV1201
+    Class: Software Development Diploma Program
+    Author: Dario, Candace & Palak 
+ -->
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap" rel="stylesheet">
+     <link href="root.css" rel="stylesheet">
+     <link href="index_stylesheet.css" rel="stylesheet">
+     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+     <script src="property.js"></script>
+ </head>
+ <body>
+ <div class="wrapper">
+     <div class="grid-item logo"><img src="images/logo.jpg" width="66px" height="55px" alt="WorkDart_logo"></div>
+     <div class="grid-item header">
+         <div class="grid-item user_welcome">Welcome to WorkDart</div>
+         <div class="grid-item user_profile_pic"><a href="profile_owner.html"><img src="images/user_profile.png" width="55px" height="55px" alt="user_profile"></a></div>
+     </div>
+     <div class="grid-line"></div>
+     <div class="grid-item buttons_top">
+         <div class="grid-item edit"><button onclick="window.location='editProperty.html'">Edit</button></div>
+         <div class="grid-item delete"><button onclick="deleteProp()">Delete</button></div>
+     </div>
+     <div class="grid-separation"></div>
+     <div class="grid-item main">
+         <div class="grid-item left_arrow" id="previousArrow"><img src="images/previous.png" width="60px" height="100px" alt="Left" onclick="onPrevious();"></div>
+         <div class="grid-item property_info">
+             <table width="100%">
+                 <tr>
+                 <td colspan="2" class="property_name"><span id="property_name">Property’s name</span></td>
+                 </tr>
+                 <tr>
+                     <td class="tab_col_1">Address</td>
+                     <td class="tab_col_2"><span id="address"></span></td>
+                 </tr>
+                 <tr>
+                 <td class="tab_col_1">Neighborhood</td>
+                 <td class="tab_col_2"><span id="neighborhood"></span></td>
+                 </tr>
+                 <tr>
+                 <td class="tab_col_1">Type of coworking space</td>
+                 <td class="tab_col_2">
+                     <span id="coworking_type"></span>
+                 </td>
+                 </tr>
+                 <tr>
+                 <td class="tab_col_1">Amenities</td>
+                 <td class="tab_col_2" style="height: 140px;">
+                     <ul id="amenities">
+                     </ul>
+                 </td>
+                 </tr>
+                 <tr>
+                     <td class="tab_col_1">Price</td>
+                     <td class="tab_col_2"><span id="price"></span></td>
+                 </tr>
+                 <tr>
+                     <td class="tab_col_1">Status</td>
+                     <td class="tab_col_2">
+                         <span id="status"></span>
+                     </td>
+                 </tr>
+                 <tr>
+                     <td class="tab_col_1">Rating</td>
+                     <td class="tab_col_2"><span id="rating"></span></td>
+                 </tr>
+             </table>
+         </div>
+         <div class="grid-item property_map" id="map">
+         <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhya7MJzQMruGHp0MZp55n2TmTkxLD2dg&callback=InitMap"></script>
+         </div>
+         <div class="grid-item property_map_info"><span id="property_description"></span></br>
+             <span id="lat" style="visibility:hidden;">51.0467</span><span id="lng" style="visibility: hidden;">-114.0563</span>
+         </div>
+         <div class="grid-item right_arrow" id="nextArrow"><img src="images/next.png" width="60px" height="100px" alt="Right" onclick="onNext()"></div>        
+     </div>
+     <div class="grid-separation"></div>
+     <div class="grid-item buttons_bottom"><button onclick="window.location='addProperty.html'" id="upload">Upload new property</button></div>
+     <div class="grid-separation"></div>
+     <div class="grid-line"></div>
+     <div class="grid-item footer">
+         Copyright &#169 2021 Dario Ospina Latorre, Palak Sharma and Candace Arriola</br>
+         <span style="font-size: 11px; color:grey">All images used in the website have been sourced from royalty and copyright free websites.</span>
+     </div>
+ </div>
+ 
+ 
+ </body>
+ </html>

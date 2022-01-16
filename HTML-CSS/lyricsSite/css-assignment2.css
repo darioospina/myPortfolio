@@ -1,0 +1,191 @@
+body {
+    margin: 0px 100px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+}
+
+.title {
+    background-color: #FFFF00;
+    text-align: center;
+    color: #444444;
+    font-size: 20px;
+    line-height: 60px;
+    margin:auto;
+}
+
+nav {
+    border: 0px solid;
+    background-color: #444444;
+    line-height: 40px;
+}
+
+nav ul {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    display: inline-block;
+    border: 0px solid;
+}
+
+nav li a {
+    text-decoration: none;
+    font-family:sans-serif;
+    font-size: 15px;
+    color: white;
+    padding: 0px 30px;
+}
+
+.banner {
+    background-image: url(images/talking_heads-speaking_in_tongues.png);
+    background-position-y: center;
+    background-size:cover;
+    height: 250px;
+    text-align: center;
+    margin: 0 0 15px 0;
+}
+
+.insideBanner {
+    display:inline-block;
+    background-color: rgb(0, 0, 0, 0.7);
+    width: 85%;
+    height: 250px;
+    color: white;
+    font-family:Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+
+.songName {
+    margin: 40px 0 0 20px;
+    text-align: left;
+    color: #FFFF00;
+    font-size: 27px;
+}
+
+.songSubtitle {
+    margin: 0px 0 0 20px;
+    text-align: left;
+    font-size: 20px;
+}
+
+.album {
+    margin: 20px 0 0 20px;
+    text-align: left;
+    font-size: 17px;
+    opacity: 0.8;
+}
+
+.pictureInsideBanner {
+    float:right;
+    width: 200px;
+    height: 200px;
+    margin: 25px 30px 25px 0px;
+}
+
+.aboutSong {
+    float:right;
+    width: 300px;
+    background-color: #444444;
+    margin: 0px 150px 0 0;
+}
+
+.aboutSongTitle {
+    background-color: #FFFF00;
+    line-height: 70px;
+    margin:auto;
+    font-family:monospace;
+    text-transform: uppercase;
+    color: #444444;
+    padding: 0 0 0 15px;
+}
+
+.aboutSongBody1 {
+    color:white;
+    padding: 0 15px 0 15px;
+    font-size: 13px;
+}
+
+.aboutSongBody2 {
+    color:white;
+    padding: 0 15px 0 15px;
+    font-size: 13px;
+}
+
+.aboutSongBody3 {
+    color:white;
+    padding: 0 0 0 15px;
+    font-size: 13px;
+}
+
+.aboutSongBody4 {
+    text-align: center;
+    margin: 0 0 15px 0;
+}
+
+.verseTitle {
+    background-color: #FFFF00;
+    color: #444444;
+    display:block;
+    text-align: center;
+    width:130px;
+    margin: 0 0 0 100px;
+    text-transform: uppercase;
+    font-family:monospace;
+    padding: 10px;
+    
+}
+
+.chorusTitle {
+    background-color: #FFFF00;
+    color: #444444;
+    display:block;
+    text-align: center;
+    width:130px;
+    font-family:monospace;
+    text-transform: uppercase;
+    margin: 20px 0 0 130px;
+    padding: 10px;
+}
+
+.verseBody {
+    color: #444444;
+    display:flex;
+    border-left: #FFFF00 3px solid;
+    margin: 0 0 50px 100px;
+    padding: 10px;
+}
+
+.chorusBody {
+    color: #444444;
+    display:flex;
+    margin: 0 0 50px 130px;
+    padding: 10px;
+    border-left: #FFFF00 3px solid;
+}
+
+.chorus2 {
+    margin: 0 0 80px 130px;
+}
+
+#cite1 {
+    border-top: #FFFF00 solid 3px;
+    padding: 25px 0px;
+    font-size: 10px;
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+}
+
+#footNote {
+    text-decoration: none;
+    color:#FFFF00;
+}
+
+#footerLink {
+    text-decoration: none;
+    background-color: #FFFF00;
+    color: black;
+    font-size: 10px;
+}

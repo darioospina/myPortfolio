@@ -1,0 +1,179 @@
+<!-- 
+    Project Name: Coworking Registry(Milestone 2)
+    Course Code: SODV1201
+    Class: Software Development Diploma Program
+    Author: Dario, Candace & Palak  
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit a property</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="root.css" rel="stylesheet">
+    <link href="edit_updateProperty.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap" rel="stylesheet">
+</head>
+
+<body onload="arrayList();">
+    <div class="wrapper">
+        <!-- Header -->
+        <div class="grid-item logo"><img src="images/logo.jpg" width="66px" height="55px" alt="WorkDart_logo"></div>
+        <div class="grid-item header">
+            <div class="grid-item user_welcome">Welcome to WorkDart</div>
+            <div class="grid-item user_profile_pic">
+                <a href="profile_owner.html">
+                    <img src="images/user_profile.png" width="55px" height="55px" alt="user_profile">
+                </a>
+            </div>
+        </div>
+
+        <!-- Line between header and page content -->
+        <div class="grid-line"></div>
+
+        <!-- Back to main page button -->
+        <div class="grid-item formHeader">
+            <div class="grid-item buttons_top">
+                <div class="grid-item Back">
+                    <a href="index.html">
+                        <button>Back</button>
+                    </a>
+                </div>
+            </div>
+            <div class="grid-item selectProperty">
+                <form action ="">
+                <label for="selectProperty">Select Property:</label>
+                <select class="select" name="selectProperty">
+                    <!-- display options here... -->
+                </select>
+               
+                <button type="button" class="choose" onclick="displayFormValues()">Choose</button>
+                
+            </div>
+        </div>
+    </form>
+        <div class="grid-item form">
+            <h2>Edit property information</h2>
+            <br><br>
+            <form action="http://localhost:3000/properties/update" method="POST">
+                <!-- Property Name -->
+                <label for="propertyName">Property Name:</label>
+                <input name="propertyName" id="pName" type="text" readonly>
+                <br><br>
+                <!-- Property's neighborhood -->
+                <label for="neighborhood">Neighborhood:</label>
+                <input name="neighborhood" id="pNeighborhood" type="text">
+                <br><br>
+                <!-- Property's address -->
+                <label for="address">Address:</label>
+                <input name="address" id="pAddress" type="text">
+                <br><br>
+                <!-- Coordinates -->
+                <label for="lat">Latitude:</label>
+                <input name="lat" id="pLat" type="number">
+                <br><br>
+                <label for="lng">Longitude:</label>
+                <input name="lng" id="pLng" type="number">
+                <br><br>
+                <!-- list of Amenities available -->
+                <label for="amenities">Amenities:</label>
+                <br><br>
+                <div class="amenities">
+                    <input type="checkbox" id="wifi" name="wifi" value="wifi">
+                    <label for="wifi"> Wifi</label>
+                    <br>
+                    <input type="checkbox" id="printer" name="printer" value="printer">
+                    <label for="printer"> Printer</label>
+                    <br>
+                    <input type="checkbox" id="fax" name="fax" value="fax">
+                    <label for="fax"> Fax</label>
+                    <br>
+                    <input type="checkbox" id="showers" name="showers" value="showers">
+                    <label for="showers"> Showers</label>
+                    <br>
+                    <input type="checkbox" id="bike" name="bike" value="bike">
+                    <label for="bike"> Bike Locker</label>
+                    <br>
+                    <input type="checkbox" id="meeting" name="meeting" value="meeting">
+                    <label for="meeting"> Meeting Room</label>
+                    <br>
+                    <input type="checkbox" id="projector" name="projector" value="projector">
+                    <label for="projector"> Projector</label>
+                </div>
+                <br><br>
+                <!-- Type of Space -->
+                <label for="spaceType">Type of Coworking Space:</label>
+                <br><br>
+                <div class="spaceType">
+                    <input type="radio" id="cubicle" name="spaceType" value="Desk in Cubicle">
+                    <label for="cubicle"> Desk in Cubicle</label>
+                    <br>
+                    <input type="radio" id="private" name="spaceType" value="Desk in Private space">
+                    <label for="private"> Desk in Private space</label>
+                    <br>
+                    <input type="radio" id="shared" name="spaceType" value="Desk in Shared space">
+                    <label for="shared"> Desk in Shared space</label>
+                </div>
+                <br><br>
+                <!-- Price -->
+                <label for="price">Price:</label>
+                <input name="price" id="price" type="number">
+                <br><br>
+                <!-- Rating -->
+                <label for="rating">Rating:</label>
+                <input name="rating" id="rating" type="text" placeholder="5/5 stars">
+                <br><br>
+                <!-- Description -->
+                <label for="description">Description:</label>
+                <input name="description" id="description" type="text">
+                <br><br>
+                <!-- Availibility -->
+                <label for="availibility">Availibility:</label>
+                <br><br>
+                <div class="availibility">
+                    <input type="radio" id="rented" name="availibility" value="Rented">
+                    <label for="rented"> Rented</label>
+                    <br>
+                    <input type="radio" id="not-rented" name="availibility" value="Not rented">
+                    <label for="not-rented"> Not Rented</label>
+                    <br>
+                </div>
+                <br><br>
+                <div class="grid-item buttons_bottom">
+                    <button type="submit" id="submit_btn">Update</button>
+                    <button id="reset_btn" type="reset" >Reset Form</button>
+                </div>
+            </form>
+        </div>
+
+
+        
+
+        
+
+        <!-- Line between page content and footer -->
+        <div class="grid-line"></div>
+
+        <!-- Footer -->
+        <div class="grid-item footer">Copyright &#169 2021 Dario Ospina Latorre, Palak Sharma and Candace Arriola</div>
+    </div>
+
+    <style>
+        .form {
+            background-color: #2D848A;
+            border-radius: 20px;
+            border: 0px;
+        }
+    </style>
+
+    <script type="text/javascript" src="property.js"></script>
+</body>
+
+</html>

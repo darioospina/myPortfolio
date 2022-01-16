@@ -1,0 +1,69 @@
+.wrapper {
+    width: 900px;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    justify-content: space-evenly;
+    border: 0px solid black;
+    margin: auto;
+    font-family: 'DM Sans', sans-serif;
+    background-color: #c5d7bd;
+}
+
+.lineDivision {
+    grid-column: 1 / 3;
+    height: 2px;
+    background-color: white;
+}
+
+.gridElement {
+    border: 0px solid black;
+}
+
+.title {
+    grid-area: 1 / span 2;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Train One', cursive;
+    background-color: #fb743e;
+}
+
+.topicName {
+    grid-area: 2 / span 2;
+    text-align: center;
+    background-color: #383e56;
+    color: white;
+}
+
+.twoCols {
+    grid-column: 1 / 3;
+}
+
+.textareaContainer {
+    width: 100%;
+    line-height: 100%;
+    text-align: center;
+    margin: auto;
+}
+
+.textBox {
+    margin: 10px auto;
+}
+
+.description {
+    padding: 10px;
+}
+
+.example {
+    border: 1px solid grey;
+    width: 50%;
+    padding: 10px;
+    background-color: #FDF7E3;
+}
+
+.tagToShow {
+    color: blue;
+}
+
+.images {
+    margin: 10px 0;
+}

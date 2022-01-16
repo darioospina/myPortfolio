@@ -1,0 +1,90 @@
+/* 
+    Project Name: Coworking Registry(Milestone 2)
+    Course Code: SODV1201
+    Class: Software Development Diploma Program
+    Author: Dario, Candace & Palak 
+
+*/
+/*This stylesheet contains the elements shared across all the pages*/
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    width: 80%; 
+    margin: 0 auto;
+    font-family: 'Raleway', sans-serif;
+}
+
+.logo {
+    grid-column: 1/2;
+    margin: auto;
+    padding: 10px 0;
+}
+
+.header {
+    grid-column: 2/11;
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    padding: 10px 0;
+}
+
+.user_welcome { /*Welcome message displayed in the header*/
+    grid-column: 8/10;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+}
+
+.user_profile_pic { /*Default user profile pic displayed in the header*/
+    grid-column: 10/11;
+    border: 1px solid black;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+.grid-line {  /*Purple divisor line*/
+    grid-column: 1/11;
+    height: 2px;
+    background-color: #5F0F40;
+    margin: 0 0 20px 0;
+}
+
+.grid-separation { /*Space between buttons and 'main' div*/
+    grid-column: 1/11; 
+    margin: 10px 0;
+}
+
+.buttons_top { /*Div containing buttons displayed below the header*/
+    grid-column: 1/11;
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+}
+
+.buttons_bottom { /*Div containing buttons displayed above the footer*/
+    grid-column: 2/11;
+    margin:auto
+    
+}
+
+button {
+    width:100px;
+    font-family: 'Raleway', sans-serif;
+    background-color: #003459;
+    color: white;
+}
+
+.footer {
+    grid-column: 1/11;
+    text-align: center;
+    font-size: 13px;
+}
+
+.grid-item { /*For design purposes to be able to display a border between items*/
+    border: 0px solid black;
+}
+
+@media (max-width: 700px){
+    .wrapper {
+        width: 100%;
+    }
+}
