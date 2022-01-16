@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="coworking.js"></script>   
+    <title>Document</title>
+</head>
+<body>
+<div id="container">
+<div id="login_box">
+    <form>
+        <label for="UserName">Username:</label><br>
+        <input name="UserName" id="uName" type="text">
+        <br><br>
+        <label for="Password">Password:</label><br>
+        <input name="Password" id="Password" type="password">
+        <br><br>
+        <button type="button" onclick="login()">Submit</button>
+        <a href="./registration.html">I do not have an account.</a>
+    </form>
+</div>
+        <div id="welcome"></div>
+
+        <table id="table_properties"></table>
+
+        <button onclick="displayform()">Add new property</button>
+
+        <div id="DivNewProperty">
+            <form id="newProp">
+                <label for="propertyID">Property ID</label><br>
+                <input name="propID" id="propID" type="number" disabled>
+                <br><br>
+                <label for="propertyName">Property name</label><br>
+                <input name="pName" id="pName" type="text">
+                <br><br>
+                <label for="Address">Address</label><br>
+                <input name="Address" id="Address" type="text">
+                <br><br>
+                <label for="Type">Type</label><br>
+                <input type="radio" id="cubicle" value="Desk_in_Cubicle" name="type">Desk in Cubicle<br>	
+                <input type="radio" id="private" value="Desk_in_Private_space" name="type">Desk in Private space<br>
+                <input type="radio" id="shared" value="Desk_in_Shared_space" name="type">Desk in Shared space
+                <br><br>
+                <label for="Amenities">Amenities</label><br>
+                <input type="checkbox" id="wifi" value="wifi">Wifi<br>
+                <input type="checkbox" id="printer" value="printer">Printer<br>
+                <input type="checkbox" id="fax" value="fax">Fax<br>
+                <input type="checkbox" id="showers" value="showers">Showers<br>
+                <input type="checkbox" id="bike" value="bike">Bike locker<br>
+                <input type="checkbox" id="meeting" value="meeting">Meeting room<br>
+                <input type="checkbox" id="projector" value="projector">Projector
+                <br><br>
+                <label for="Price">Price</label><br>
+                <input name="Price" id="Price" type="number">
+                <br><br>
+                <label for="Status">Status</label><br>
+                <select id="Status" disabled>
+                    <option value="Not_rented" id="Not_rented">Not rented</option>
+                    <option value="Rented" id="Rented">Rented</option>
+                </select>
+                <br><br>
+                <label for="Rating">Rating</label><br>
+                <input type="radio" id="one" value="1" name="rating">1	
+                <input type="radio" id="two" value="2" name="rating">2
+                <input type="radio" id="three" value="3" name="rating">3
+                <input type="radio" id="four" value="4" name="rating">4
+                <input type="radio" id="five" value="5" name="rating">5
+                <br><br>
+                <label for="Latitude">Latitude</label><br>
+                <input name="latitude" id="latitude" type="number" step="any">
+                <br><br>
+                <label for="Longitude">Longitude</label><br>
+                <input name="longitude" id="longitude" type="number" step="any">
+                <br><br>
+                <label for="description">Description</label><br>
+                <textarea name="description" id="description" type="text" rows="5"></textarea>
+                <br><br>
+                <label for="propertyName">Pictures</label><br>
+                <input type="file" name="pic1" id="pic1" accept="image/png, image/gif, image/jpeg"><br>
+                <input type="file" name="pic2" id="pic2" accept="image/png, image/gif, image/jpeg"><br>
+                <input type="file" name="pic3" id="pic3" accept="image/png, image/gif, image/jpeg"> 
+                <br><br>
+                <button onclick="postProperty()" id="submitBttn">Submit</button>
+                <button onclick="updateProperty()" id="updateBttn">Update</button>
+                <button type="reset">Reset</button>
+            </form>
+        </div>
+    <style>
+        #login_box {
+            visibility: visible;
+            background-color: rgb(88, 96, 204);
+            padding: 10px;
+            position: absolute;
+        }
+
+        #DivNewProperty{
+            visibility: hidden;
+        }
+        
+        td {
+            border: 1px solid black;
+        }
+
+        form, table {
+            background-color: rgb(147, 201, 198);
+            padding: 10px
+        }
+
+        #submitBttn, #updateBttn {
+            visibility: hidden;
+        }
+
+    </style>
+
+    </div>
+
+</body>
+</html>

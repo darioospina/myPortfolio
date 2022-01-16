@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="finder.js"></script> 
+    <title>Document</title>
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+        
+        td {
+            border: solid black 1px
+        }
+
+        .ulAmenities {
+            margin: 0;
+            padding: 0 0 0 20px
+        }
+
+        .ulAmenities .liAmenities::marker {
+            margin: 0;
+            padding: 0 0 0 0;
+            color: blue
+        }
+
+        .liAmenities {
+            text-transform: capitalize;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 0;
+            border-bottom: 1px solid #ddd;
+        }
+
+        #table_properties {
+            visibility: visible;
+            margin: 0 0 0 25px
+        }
+
+        #table_properties_filters {
+            visibility: hidden;
+        }
+
+        #container {
+            display: flex;
+            flex-direction: row;
+            flex-flow: row wrap
+        }
+
+        #orderBy {
+            flex: 0 0 100%
+        }
+
+    </style>
+</head>
+<body onload="loadProperties()">
+<div id="container">
+    <div id="filters">
+    <form id="filtersTable" width="20%">
+        <table>
+        <tr><td><label for="Amenities">Sort by</label></td></tr>
+        <tr><td>
+        <select id="orderby" name="orderby">
+        <option value="orderby_price">Price</option>
+        <option value="orderby_rating">Rating</option>
+        </select>
+        <select id="direction" name="direction">
+        <option value="ascendent">Ascendent</option>
+        <option value="descendent">Descendent</option>
+        </select>
+        </td></tr>
+        <tr><td><button type="button" onclick="orderBy()">Apply</button></td></tr>
+        <tr><td><label for="Amenities">Amenities</label></td></tr>
+        <tr><td>
+        <input type="checkbox" id="wifi" value="wifi" name="amenities">Wifi<br>
+        <input type="checkbox" id="printer" value="printer" name="amenities">Printer<br>
+        <input type="checkbox" id="fax" value="fax" name="amenities">Fax<br>
+        <input type="checkbox" id="showers" value="showers" name="amenities">Showers<br>
+        <input type="checkbox" id="bike" value="bike" name="amenities">Bike locker<br>
+        <input type="checkbox" id="meeting" value="meeting" name="amenities">Meeting room<br>
+        <input type="checkbox" id="projector" value="projector" name="amenities">Projector
+        </td></tr>
+        <tr><td><label for="Type">Type</label></td></tr>
+        <tr><td>
+        <input type="radio" id="cubicle" value="Desk_in_Cubicle" name="type">Desk in Cubicle<br>	
+        <input type="radio" id="private" value="Desk_in_Private_space" name="type">Desk in Private space<br>
+        <input type="radio" id="shared" value="Desk_in_Shared_space" name="type">Desk in Shared space
+        </td></tr>
+        <tr><td><label for="Status">Status</label></td></tr>
+        <tr><td>
+        <input type="radio" id="rented" value="Rented" name="status">Rented<br>	
+        <input type="radio" id="not_rented" value="Not rented" name="status">Not rented
+        </td></tr>
+        <tr><td><label for="Price">Price</label></td></tr>
+        <tr><td>
+        <input type="radio" id="price_from0_to500" value="price_from0_to500" name="price">From 0 to 500<br>	
+        <input type="radio" id="price_from501_to750" value="price_from501_to750" name="price">From 501 to 750<br>
+        <input type="radio" id="price_from751_to1000" value="price_from751_to1000" name="price">From 751 to 1000<br>
+        <input type="radio" id="price_more_than1000" value="price_more_than1000" name="price">More than 1000<br>
+        </td></tr>          
+        <tr><td><button type="button" onclick="applyFilters()">Apply</button>
+        <button type="button" onclick="cleanFilters()">Clean</button></td></tr>
+        </table>
+    </form>
+    </div>
+
+    <!--<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhya7MJzQMruGHp0MZp55n2TmTkxLD2dg&callback=InitMap"></script>-->  
+    <table id="table_properties" width="80%"></table>
+    <table id="table_properties_filters" width="80%"></table>
+</div>
+</body>
+</html>

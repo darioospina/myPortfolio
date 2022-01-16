@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <form action="http://localhost:3000/users/add" method="POST">
+        <label for="UserName">Username:</label><br>
+        <input name="UserName" id="uName" type="text">
+        <br><br>
+        <label for="Password">Password:</label><br>
+        <input name="Password" id="Password" type="password">
+        <br><br>
+        <label for="Email">E-mail:</label><br>
+        <input name="Email" id="Email" type="email">
+        <br><br>
+        <label for="Cellphone">Phone:</label><br>
+        <input name="Cellphone" id="Cellphone" type="tel">
+        <br><br>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+    <div id="response"></div>
+    <script src="coworking.js"></script>
+</body>
+</html>
