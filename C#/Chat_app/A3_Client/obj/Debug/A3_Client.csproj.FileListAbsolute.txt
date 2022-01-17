@@ -1,0 +1,10 @@
+C:\Users\da_os\Documents\Personal\BVC\SODV2202 - Object Oriented Programming\Assignments\Assignment 3\A3_ClientServer\A3_Client\bin\Debug\A3_Client.exe.config
+C:\Users\da_os\Documents\Personal\BVC\SODV2202 - Object Oriented Programming\Assignments\Assignment 3\A3_ClientServer\A3_Client\bin\Debug\A3_Client.exe
+C:\Users\da_os\Documents\Personal\BVC\SODV2202 - Object Oriented Programming\Assignments\Assignment 3\A3_ClientServer\A3_Client\bin\Debug\A3_Client.pdb
+C:\Users\da_os\Documents\Personal\BVC\SODV2202 - Object Oriented Programming\Assignments\Assignment 3\A3_ClientServer\A3_Client\obj\Debug\A3_Client.csproj.AssemblyReference.cache
+C:\Users\da_os\Documents\Personal\BVC\SODV2202 - Object Oriented Programming\Assignments\Assignment 3\A3_ClientServer\A3_Client\obj\Debug\A3_Client.Form1.resources
+C:\Users\da_os\Documents\Personal\BVC\SODV2202 - Object Oriented Programming\Assignments\Assignment 3\A3_ClientServer\A3_Client\obj\Debug\A3_Client.Properties.Resources.resources
+C:\Users\da_os\Documents\Personal\BVC\SODV2202 - Object Oriented Programming\Assignments\Assignment 3\A3_ClientServer\A3_Client\obj\Debug\A3_Client.csproj.GenerateResource.cache
+C:\Users\da_os\Documents\Personal\BVC\SODV2202 - Object Oriented Programming\Assignments\Assignment 3\A3_ClientServer\A3_Client\obj\Debug\A3_Client.csproj.CoreCompileInputs.cache
+C:\Users\da_os\Documents\Personal\BVC\SODV2202 - Object Oriented Programming\Assignments\Assignment 3\A3_ClientServer\A3_Client\obj\Debug\A3_Client.exe
+C:\Users\da_os\Documents\Personal\BVC\SODV2202 - Object Oriented Programming\Assignments\Assignment 3\A3_ClientServer\A3_Client\obj\Debug\A3_Client.pdb
