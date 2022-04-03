@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31911.196
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Laundry_app", "Laundry_app\Laundry_app.csproj", "{6A2230E5-0A4B-43ED-BDF1-06B0BE443EFE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6A2230E5-0A4B-43ED-BDF1-06B0BE443EFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A2230E5-0A4B-43ED-BDF1-06B0BE443EFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A2230E5-0A4B-43ED-BDF1-06B0BE443EFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A2230E5-0A4B-43ED-BDF1-06B0BE443EFE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2BB886D0-317D-45CF-8AD6-6C143A793749}
+	EndGlobalSection
+EndGlobal

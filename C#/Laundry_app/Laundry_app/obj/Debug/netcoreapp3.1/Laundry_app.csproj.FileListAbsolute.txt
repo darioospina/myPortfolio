@@ -1,0 +1,14 @@
+C:\Users\da_os\Documents\GitHub\myPortfolio\C#\Laundry_app\Laundry_app\bin\Debug\netcoreapp3.1\Laundry_app.exe
+C:\Users\da_os\Documents\GitHub\myPortfolio\C#\Laundry_app\Laundry_app\bin\Debug\netcoreapp3.1\Laundry_app.deps.json
+C:\Users\da_os\Documents\GitHub\myPortfolio\C#\Laundry_app\Laundry_app\bin\Debug\netcoreapp3.1\Laundry_app.runtimeconfig.json
+C:\Users\da_os\Documents\GitHub\myPortfolio\C#\Laundry_app\Laundry_app\bin\Debug\netcoreapp3.1\Laundry_app.runtimeconfig.dev.json
+C:\Users\da_os\Documents\GitHub\myPortfolio\C#\Laundry_app\Laundry_app\bin\Debug\netcoreapp3.1\Laundry_app.dll
+C:\Users\da_os\Documents\GitHub\myPortfolio\C#\Laundry_app\Laundry_app\bin\Debug\netcoreapp3.1\Laundry_app.pdb
+C:\Users\da_os\Documents\GitHub\myPortfolio\C#\Laundry_app\Laundry_app\obj\Debug\netcoreapp3.1\Laundry_app.csproj.AssemblyReference.cache
+C:\Users\da_os\Documents\GitHub\myPortfolio\C#\Laundry_app\Laundry_app\obj\Debug\netcoreapp3.1\Laundry_app.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\da_os\Documents\GitHub\myPortfolio\C#\Laundry_app\Laundry_app\obj\Debug\netcoreapp3.1\Laundry_app.AssemblyInfoInputs.cache
+C:\Users\da_os\Documents\GitHub\myPortfolio\C#\Laundry_app\Laundry_app\obj\Debug\netcoreapp3.1\Laundry_app.AssemblyInfo.cs
+C:\Users\da_os\Documents\GitHub\myPortfolio\C#\Laundry_app\Laundry_app\obj\Debug\netcoreapp3.1\Laundry_app.csproj.CoreCompileInputs.cache
+C:\Users\da_os\Documents\GitHub\myPortfolio\C#\Laundry_app\Laundry_app\obj\Debug\netcoreapp3.1\Laundry_app.dll
+C:\Users\da_os\Documents\GitHub\myPortfolio\C#\Laundry_app\Laundry_app\obj\Debug\netcoreapp3.1\Laundry_app.pdb
+C:\Users\da_os\Documents\GitHub\myPortfolio\C#\Laundry_app\Laundry_app\obj\Debug\netcoreapp3.1\Laundry_app.genruntimeconfig.cache
